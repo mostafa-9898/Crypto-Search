@@ -13,7 +13,7 @@ const Coin = (props) => {
             <span className={styles.name}>{name}</span>
             <span className={styles.symbol}>{symbol.toUpperCase()}</span>
             {/* Shows up to 2 decimal places */}
-            <span className={priceChange > 0 ? styles.greenPriceChange : styles.redPriceChange}>{priceChange.toFixed(2)}</span>
+            <span className={priceChange > 0 ? styles.greenPriceChange : styles.redPriceChange}>{priceChange}</span>
             <span className={styles.currentPrice}><span>Current Price:</span> ${price.toLocaleString()}</span>
             {/* Separates the digits from all three digits */}
             <span className={styles.marketCap}><span>Market Cap:</span> ${marketCap.toLocaleString()}</span>
